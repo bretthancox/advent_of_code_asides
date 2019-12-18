@@ -41,12 +41,12 @@ impl Day1Inputs {
 }
 
 
-fn chase_the_longest_path<'b>(connections: &'b HashMap<&str, Vec<&str>>, key_to_use: &'b str, mut chain: &mut Vec<&'b str>) -> usize {
+fn chase_the_longest_path<'b>(connections: &'b HashMap<&str, Vec<&str>>, key_to_use: &'b str) -> usize {//, mut chain: &mut Vec<&'b str>) -> usize {
     let starting_point: Vec<&str> = connections.get(key_to_use).unwrap().to_vec();
-    chain.push(key_to_use);
+    //chain.push(key_to_use);
     let mut persistent_counter: usize = starting_point.len();
     for value in starting_point {
-        let temp_counter = chase_the_longest_path(connections, value, &mut chain);
+        let temp_counter = chase_the_longest_path(connections, value);//, &mut chain);
         persistent_counter = persistent_counter + temp_counter;
     }
     persistent_counter
@@ -94,7 +94,7 @@ fn main() {
 
     for (key, _val) in connections.iter() {
         //println!("Current point: {}", key);
-        counter += chase_the_longest_path(&connections, key, &mut Vec::new());
+        counter += chase_the_longest_path(&connections, key);//, &mut Vec::new());
     }
 
     println!("{}", counter);
