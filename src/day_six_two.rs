@@ -236,17 +236,8 @@ mod test {
         let mut test_tree = ChristmasTree::default();
         let test_input = String::from("COM)B\nB)C\nC)D\nD)E\nE)F\nB)G\nG)H\nD)I\nE)J\nJ)K\nK)L");
         test_input.split("\n").for_each(|o| test_tree.use_the_split_string(o.trim()));
-        let orbits = test_tree.sum_orbits();
+        let orbits = test_tree.sum_all_chains_to_root();
         assert_eq!(orbits, 42);
-    }
-
-    #[test]
-    fn test_count_descendants() {
-        let mut test_tree = ChristmasTree::default();
-        let test_input = String::from("COM)B\nB)C\nC)D\nD)E\nE)F\nB)G\nG)H\nD)I\nE)J\nJ)K\nK)L");
-        test_input.split("\n").for_each(|o| test_tree.use_the_split_string(o.trim()));
-        let direct_children = test_tree.bodies.iter().fold(0, |acc, node| acc + test_tree._count_descendants(node.index));
-        assert_eq!(direct_children, 11);
     }
 
     #[test]
