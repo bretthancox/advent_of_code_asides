@@ -8,4 +8,6 @@ edition = "2018"
 
 [dependencies]
 structopt = "0.3"
+
+[dev-dependencies]
 pretty_assertions = "0.6"
