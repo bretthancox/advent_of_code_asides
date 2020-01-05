@@ -1,0 +1,35 @@
+"optOutInfo": {
+      "decisionReason": "Member said he does not need this, is not interested, does not want to be bothered, and wants this removed entirely from his plan and to not be called in the future at any point. @ 4:51 pm",
+      "call": {
+        "subject": "c4ac018e3862ca37c8535a4f2cac03b2",
+        "workflowIteration": 1,
+        "currentYear": 3,
+        "user": "sriker@trhc.com",
+        "userMetadata": {
+          "_id": 1321,
+          "auth0Id": "YXV0aDB8NWE4NWQ2YzJhZmQwMjcyODhiYjE0ZGNh",
+          "firstName": "Stacie",
+          "lastName": "Riker",
+          "email": "sriker@trhc.com"
+        },
+        "auditDate": "2019-02-18T16:52:46-05:00",
+        "record": {
+          "attempt": 1,
+          "dateRecorded": 1550526766201,
+          "direction": "user",
+          "successful": true,
+          "decision": false,
+          "decisionReason": "Member said he does not need this, is not interested, does not want to be bothered, and wants this removed entirely from his plan and to not be called in the future at any point. @ 4:51 pm",
+          "interaction": "call",
+          "lvm": false,
+          "spokeToMember": true,
+          "spokeToCaregiver": false,
+          "forPrimaryProject": false,
+          "spokeTo": "Member"
+        },
+        "app": "Initiating Call"
+      },
+      "user": "sriker@trhc.com",
+      "userId": "YXV0aDB8NWE4NWQ2YzJhZmQwMjcyODhiYjE0ZGNh",
+      "date": "2019-02-18T16:54:12-05:00"
+    }
